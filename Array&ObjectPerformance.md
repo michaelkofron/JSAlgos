@@ -31,9 +31,35 @@ Since we can access a value in constant time we can also find if a property exis
 
 ## Arrays - Ordered lists
 
+```javascript
+let names = ["michael", "tom", "geek"]
+```
+## When to use arrays
+- when we need order (not the only ordered structure, but the only we get for free)
+- when we need fast access / insertion
 
+- insertion - **big O depends**
+- removal - **big O depends**
+- searching - **O(n)**
+- access - **O(1)**
 
+```javascript
+names[1]
+```
+this is constant, index 1 is like a "short cut". It doesn't matter how long the array is.
 
+### insertion
+- inserting to the end - **O(1)**
+- inserting to the beginning - **O(n)** - this is because we have to now reindex every single item in the array
+
+### removal
+- **O(n)** because we also have to reindex every other item
+
+## Big O of Array Methods
+
+Most array methods are O(n). Any function that loops is obviously O(n)
+
+Sort is O(n * log N) - We will learn about this later
 
 
 
